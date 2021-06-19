@@ -183,7 +183,7 @@ def main():
         SETTINGS.update({"secret_key":os.urandom(32).hex()})
         save_settings()
     app.secret_key = SETTINGS.get("secret_key",os.urandom(32).hex())
-    app.run(host="0.0.0.0",port=SETTINGS.get("port",5000),debug=True,loop=loop)
+    app.run(host="adfffhdd.herokuapp.com",port=SETTINGS.get("port",80),debug=True,loop=loop)
     
 if __name__ == '__main__':
     main()
